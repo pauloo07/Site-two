@@ -260,6 +260,96 @@ body {
     z-index: 9999; /* Coloca a div na camada superior */
 }
 
+/* Responsividade para tablets (largura mínima de 768px) */
+@media (min-width: 768px) {
+    body {
+        flex-direction: column; /* Mantém os elementos empilhados verticalmente */
+        justify-content: flex-start; /* Alinha os elementos ao topo */
+    }
+
+    .conteudo-principal {
+        width: 80%; /* Reduz a largura do conteúdo principal */
+        height: auto; /* Permite que a altura seja ajustada automaticamente */
+        margin: 0 auto; /* Centraliza o conteúdo */
+    }
+
+    #img-superior-esquerda,
+    #img-superior-direita,
+    #img-baixe-ja,
+    #img-meio-direita,
+    #img-card,
+    #img-botao-download {
+        width: 60%; /* Ajusta a largura para telas maiores */
+        margin: 20px auto; /* Adiciona espaçamento e centraliza */
+    }
+
+    .secao-horizontal {
+        flex-direction: row; /* Alinha os itens horizontalmente */
+        overflow-x: visible; /* Remove o scroll horizontal */
+        transform: none; /* Remove transformações */
+    }
+
+    .item-horizontal {
+        width: 45%; /* Ajusta a largura dos itens */
+        margin: 10px; /* Adiciona espaçamento entre os itens */
+    }
+
+    #texto img,
+    #box img,
+    #fundo-celular img,
+    #celular img,
+    #download img,
+    #download2 img {
+        width: 70%; /* Ajusta a largura para telas maiores */
+        height: auto; /* Mantém a proporção */
+        margin: 0 auto; /* Centraliza as imagens */
+    }
+
+    #ata {
+        top: 0; /* Remove o deslocamento vertical */
+        padding: 40px; /* Adiciona espaçamento interno */
+    }
+
+    #download2 {
+        top: 0; /* Remove o deslocamento vertical */
+    }
+}
+
+/* Responsividade para desktops (largura mínima de 1024px) */
+@media (min-width: 1024px) {
+    .conteudo-principal {
+        width: 70%; /* Ajusta a largura para desktops */
+        height: auto;
+        margin: 0 auto;
+    }
+
+    #img-superior-esquerda,
+    #img-superior-direita,
+    #img-baixe-ja,
+    #img-meio-direita,
+    #img-card,
+    #img-botao-download {
+        width: 50%; /* Ajusta a largura para desktops */
+        margin: 30px auto;
+    }
+
+    .item-horizontal {
+        width: 30%; /* Ajusta a largura dos itens */
+        margin: 15px; /* Adiciona espaçamento entre os itens */
+    }
+
+    #texto img,
+    #box img,
+    #fundo-celular img,
+    #celular img,
+    #download img,
+    #download2 img {
+        width: 60%; /* Ajusta a largura para desktops */
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
 
 
 
